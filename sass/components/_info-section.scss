@@ -1,0 +1,11 @@
+.info__box {
+    display: flex;
+    gap: 100px;
+}
+
+.info__ddescription {
+    color: var(--grey-text-color);
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.25;
+}

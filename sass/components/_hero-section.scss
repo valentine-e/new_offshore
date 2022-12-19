@@ -1,0 +1,39 @@
+.hero {
+  background-color: var(--accent-color);
+  // padding: 75px 0 60px 0;
+  background-image: url(../images/hero-bcg.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom 77px right;
+}
+
+.hero__title {
+  font-family: var(--title-font-family);
+  color: var(--white-text-color);
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.25;
+  margin-bottom: 30px;
+}
+/*# sourceMappingURL=main.css.map */
+
+.hero__description {
+  color: var(--white-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.25;
+  margin-bottom: 60px;
+}
+
+
+
+.hero__box {
+  display: flex;
+  gap: 130px;
+}
+
+.hero__info {
+  width: 70%;
+}

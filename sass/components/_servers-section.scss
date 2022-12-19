@@ -1,0 +1,39 @@
+.servers {
+  background-color: var(--accent-color);
+  background-image: url(../images/hero-bcg.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom left;
+}
+
+.servers__title {
+  color: var(--white-text-color);
+
+
+  margin-bottom: 24px;
+}
+
+.servers__description {
+  width: 70%;
+}
+
+.servers__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.servers__list {
+  margin-bottom: 35px;
+}
+
+.servers__item {
+  color: var(--white-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+
+  &:not(:last-child) {
+    margin-bottom: 28px;
+  }
+}

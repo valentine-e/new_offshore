@@ -1,0 +1,33 @@
+.offer {
+  background-color: #4e4e4e;
+  background-image: url(../images/offer-bcg.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: bottom left;
+}
+
+.offer__title {
+  font-size: 50px;
+  color: var(--white-text-color);
+  margin-bottom: 15px;
+}
+
+.offer__text {
+  font-family: var(--title-font-family);
+  color: var(--white-text-color);
+  font-size: 24px;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.offer__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.offer__button {
+  border: transparent;
+  height: fit-content;
+  white-space: nowrap;
+}
