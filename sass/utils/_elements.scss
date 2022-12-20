@@ -35,7 +35,7 @@ section {
   --white-text-color: #ffffff;
   --grey-text-color: #6c6c6c;
   --accent-color: #4aa7f0;
-  --button-animation: all 0.5s ease;
+  --button-animation: color 0.5s ease, background-color 0.5s ease, border 0.5s ease;
   --title-font-family: "Black Han Sans", sans-serif;
 }
 
@@ -50,6 +50,11 @@ section {
   font-size: 40px;
   font-family: var(--title-font-family);
   font-weight: 400;
+
+  @media screen and (max-width: 565px) {
+  
+      font-size: 22px;
+    }
 }
 
 .button--white {
@@ -92,4 +97,11 @@ section {
 
 .button--mr {
   margin-right: 20px;
+}
+
+
+.button--mb {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
 }

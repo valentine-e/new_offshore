@@ -1,0 +1,38 @@
+.bonuses {
+background-color: var(--accent-color);
+    background-image: url(../images/hero-bcg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bonuses__title {
+    color: var(--white-text-color);
+ margin-bottom: 60px;
+}
+
+.bonuses__list {
+    width: 85%;
+list-style-type: disc;
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 767px) {
+            width: 100%;
+            gap: 30px;
+            flex-flow: column;
+            
+        }
+}
+
+.bonuses__item {
+    color: var(--white-text-color);
+
+    font-weight: 500;
+        font-size: 24px;
+        line-height: 1.25;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}

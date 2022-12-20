@@ -1,6 +1,5 @@
 .hero {
   background-color: var(--accent-color);
-  // padding: 75px 0 60px 0;
   background-image: url(../images/hero-bcg.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -16,6 +15,11 @@
   font-size: 48px;
   line-height: 1.25;
   margin-bottom: 30px;
+
+  @media screen and (max-width: 565px) {
+  
+      font-size: 40px;
+    }
 }
 /*# sourceMappingURL=main.css.map */
 
@@ -32,8 +36,28 @@
 .hero__box {
   display: flex;
   gap: 130px;
+
+@media screen and (max-width: 767px) {
+            gap: 0;
+          flex-flow: column;
+         
+        }
+
 }
 
 .hero__info {
   width: 70%;
 }
+
+
+.hero__image {
+  @media screen and (max-width: 565px) {
+ 
+          position: absolute;
+            top: 40PX;
+            margin-bottom: 30px;
+            height: auto;
+    }
+}
+
+

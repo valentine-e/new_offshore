@@ -1,0 +1,24 @@
+.contact {
+    background-color: #4e4e4e;
+        background-image: url(../images/offer-bcg.svg);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: bottom left;
+}
+
+.contact__button {
+    border: transparent;
+width: 260px;
+text-align: center;
+        white-space: nowrap;
+}
+
+.contact__text {
+    margin-bottom: 40px;
+}
+
+.contact__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

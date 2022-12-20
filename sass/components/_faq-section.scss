@@ -1,10 +1,28 @@
+.faq {
+    background-image: url(/images/faq-bcg.svg);
+    background-repeat: no-repeat;
+background-size: 980px 496px;
+background-position: center right;
+
+@media screen and (max-width: 565px) {
+background-image: none;
+  }
+}
+
+
+
 .faq__title {
   color: var(--accent-color);
   margin-bottom: 80px;
 }
 
 .accordion {
+
   width: 60%;
+
+    @media screen and (max-width: 767px) {
+        width: 100%;
+      }
 }
 
 .accordion__item {
@@ -18,11 +36,13 @@
   justify-content: space-between;
   display: flex;
   align-items: center;
-
   padding: 20px 0;
+   
 
   &:focus + .accordion__info {
     max-height: max-content;
+
+   
   }
 
   &:focus > .accordion__arrow {
@@ -48,8 +68,12 @@
   font-size: 14px;
   line-height: 1.25;
   margin-bottom: 30px;
+
+    
 }
 
 .accordion__arrow {
   transform: rotate(-90deg);
+
+    transition: transform 0.5s ease;
 }

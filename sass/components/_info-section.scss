@@ -1,6 +1,12 @@
 .info__box {
     display: flex;
     gap: 100px;
+    align-items: center;
+
+    @media screen and (max-width: 767px) {
+flex-flow: column;
+gap: 30px;
+        }
 }
 
 .info__ddescription {
@@ -8,4 +14,10 @@
     font-weight: 500;
         font-size: 16px;
         line-height: 1.25;
+}
+
+.info__image {
+    @media screen and (max-width: 767px) {
+          margin: 0 auto;
+        }
 }

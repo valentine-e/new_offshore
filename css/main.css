@@ -35,7 +35,7 @@ section {
   --white-text-color: #ffffff;
   --grey-text-color: #6c6c6c;
   --accent-color: #4aa7f0;
-  --button-animation: all 0.5s ease;
+  --button-animation: color 0.5s ease, background-color 0.5s ease, border 0.5s ease;
   --title-font-family: "Black Han Sans", sans-serif;
 }
 
@@ -50,6 +50,11 @@ section {
   font-size: 40px;
   font-family: var(--title-font-family);
   font-weight: 400;
+}
+@media screen and (max-width: 565px) {
+  .section-title {
+    font-size: 22px;
+  }
 }
 
 .button--white {
@@ -92,6 +97,12 @@ section {
   margin-right: 20px;
 }
 
+@media screen and (max-width: 767px) {
+  .button--mb {
+    margin-bottom: 30px;
+  }
+}
+
 .hero {
   background-color: var(--accent-color);
   background-image: url(../images/hero-bcg.svg);
@@ -110,6 +121,11 @@ section {
   line-height: 1.25;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 565px) {
+  .hero__title {
+    font-size: 40px;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
 .hero__description {
@@ -124,9 +140,24 @@ section {
   display: flex;
   gap: 130px;
 }
+@media screen and (max-width: 767px) {
+  .hero__box {
+    gap: 0;
+    flex-flow: column;
+  }
+}
 
 .hero__info {
   width: 70%;
+}
+
+@media screen and (max-width: 565px) {
+  .hero__image {
+    position: absolute;
+    top: 40PX;
+    margin-bottom: 30px;
+    height: auto;
+  }
 }
 
 .prices__title {
@@ -138,6 +169,11 @@ section {
   display: flex;
   gap: 60px;
 }
+@media screen and (max-width: 767px) {
+  .prices__cards {
+    flex-flow: column;
+  }
+}
 
 .prices__card {
   padding: 25px 20px 25px;
@@ -148,8 +184,14 @@ section {
   justify-content: space-between;
 }
 
-.prices__image {
+.prices__box {
   margin-bottom: 17px;
+}
+
+@media screen and (max-width: 767px) {
+  .prices__image {
+    width: 100%;
+  }
 }
 
 .prices__option {
@@ -192,6 +234,11 @@ section {
   line-height: 20px;
   text-align: center;
   border: 1px solid var(--accent-color);
+  transition: var(--button-animation);
+}
+.prices__btn:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-background-color);
 }
 
 .servers {
@@ -233,6 +280,13 @@ section {
 .info__box {
   display: flex;
   gap: 100px;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .info__box {
+    flex-flow: column;
+    gap: 30px;
+  }
 }
 
 .info__ddescription {
@@ -240,6 +294,12 @@ section {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
+}
+
+@media screen and (max-width: 767px) {
+  .info__image {
+    margin: 0 auto;
+  }
 }
 
 .offer {
@@ -255,6 +315,11 @@ section {
   color: var(--white-text-color);
   margin-bottom: 15px;
 }
+@media screen and (max-width: 767px) {
+  .offer__title {
+    font-size: 40px;
+  }
+}
 
 .offer__text {
   font-family: var(--title-font-family);
@@ -268,6 +333,12 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .offer__box {
+    flex-flow: column;
+    gap: 30px;
+  }
 }
 
 .offer__button {
@@ -291,6 +362,11 @@ section {
 .advantages__item {
   width: 30%;
 }
+@media screen and (max-width: 767px) {
+  .advantages__item {
+    width: 100%;
+  }
+}
 
 .advantages__name {
   font-family: var(--title-font-family);
@@ -311,6 +387,18 @@ section {
   margin-bottom: 30px;
 }
 
+.faq {
+  background-image: url(/images/faq-bcg.svg);
+  background-repeat: no-repeat;
+  background-size: 980px 496px;
+  background-position: center right;
+}
+@media screen and (max-width: 565px) {
+  .faq {
+    background-image: none;
+  }
+}
+
 .faq__title {
   color: var(--accent-color);
   margin-bottom: 80px;
@@ -318,6 +406,11 @@ section {
 
 .accordion {
   width: 60%;
+}
+@media screen and (max-width: 767px) {
+  .accordion {
+    width: 100%;
+  }
 }
 
 .accordion__item {
@@ -361,4 +454,100 @@ section {
 
 .accordion__arrow {
   transform: rotate(-90deg);
+  transition: transform 0.5s ease;
+}
+
+.bonuses {
+  background-color: var(--accent-color);
+  background-image: url(../images/hero-bcg.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.bonuses__title {
+  color: var(--white-text-color);
+  margin-bottom: 60px;
+}
+
+.bonuses__list {
+  width: 85%;
+  list-style-type: disc;
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .bonuses__list {
+    width: 100%;
+    gap: 30px;
+    flex-flow: column;
+  }
+}
+
+.bonuses__item {
+  color: var(--white-text-color);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.25;
+}
+.bonuses__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.reviews__title {
+  color: var(--accent-color);
+  margin-bottom: 60px;
+}
+
+.reviews__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+@media screen and (max-width: 767px) {
+  .reviews__list {
+    gap: 50px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .reviews__item {
+    width: 50%;
+  }
+}
+
+.rewiews__link {
+  flex-flow: column;
+  display: flex;
+  align-items: center;
+}
+
+.reviews__logo {
+  margin-bottom: 10px;
+}
+
+.contact {
+  background-color: #4e4e4e;
+  background-image: url(../images/offer-bcg.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: bottom left;
+}
+
+.contact__button {
+  border: transparent;
+  width: 260px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.contact__text {
+  margin-bottom: 40px;
+}
+
+.contact__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
